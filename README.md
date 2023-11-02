@@ -46,4 +46,5 @@ Head to http://localhost:3000 and you'll see a web form. But, uh-oh! It should l
 
 ## Submission
 
-After completing the task, commit your changes, push them to a fork of this repository and share the link with us. Good luck!
+After completing the task, commit your changes and push them to a new repository in your GitHub/GitLab/Bitbucket account. Please grant access to user `benpolhill` (if set as private) and email us the link to the repository by 10pm on the day prior to your interview. Good luck!
+
