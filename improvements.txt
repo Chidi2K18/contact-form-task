@@ -1,0 +1,19 @@
+- More specific error messages.
+    - This will help users to identify the route cause of the issue, which is especially helpful with forms. 
+    - As they get lengthier it becomes more imoportant to know which field is causing the submission to fail.
+    - Current solution would only list one of the errors assuming both were present at once.
+        - A solution to show both messages at once would be to store the error messages in an array, push as the errors are triggered
+        - on submission pass the array as the parameter to the show messages function and add line breaks for readability
+
+- Utilising client side validation(html attributes) to implement basic validation i.e. input type/max or min length
+    - This could extend to inline validation which would provide feedback as the user fills out the form
+        - This would also reduce the number of requests as feedback would be offered before unsuccessful submissions are made
+
+- I believe that in order to best handle the issue of multiple form submissions it would be better to prevent users from making multiple successful submissions
+    - By disabling the submit button. This removes the need for implementing logic to handle multiple submissions before page refresh.
+    - This also provides an additional visual cue to users to confirm that its been completed.
+
+- Providing users with username/email availability checks and feedback (assuming a connected database is present)
+    - Ideally this would be done using ajax to prevent the page from being reloaded
+
+- Security improvements like prepared statements and escaping characters on submissions to prevent SQL injections and similar attacks

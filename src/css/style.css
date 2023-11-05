@@ -6,13 +6,13 @@ body {
 	max-width: 600px;
 	margin: 2rem auto;
 	padding: 2rem;
-	border: 1px solid #ccc;
+	border: 1px solid black;
 	border-radius: 4px;
 }
 
 .input-field {
 	display: block;
-	width: 100%;
+	width: 95%; /* changed the width to match the image provided as it was matching the width of its container */
 	padding: 1rem;
 	margin-bottom: 1rem;
 	border: 1px solid #ccc;

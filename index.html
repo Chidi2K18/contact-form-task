@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Contact Form Task</title>
-    <link rel="stylesheet" href="./src/scss/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
-
+    <!-- changed the input type for email to add simple validation -->
+    <!-- added the required attribute to ensure that all fields are populated before submission -->
+    <!-- added maxlength attribute to textarea to restrict the volume of content submitted -->
     <div class="form-container">
         <h1>Contact Us</h1>
         <form>
-            <input type="text" name="name" placeholder="Your name" class="input-field">
-            <input type="text" name="email" placeholder="Your email *" class="input-field">
-            <textarea name="message" placeholder="Your message *" class="input-field"></textarea>
+            <input type="text" name="name" placeholder="Your name" class="input-field" required>
+            <input type="email" name="email" placeholder="Your email *" class="input-field" required>
+            <textarea name="message" placeholder="Your message *" class="input-field" required maxlength="500"></textarea>
             <input type="submit" value="Send" class="submit-btn">
         </form>
     </div>
